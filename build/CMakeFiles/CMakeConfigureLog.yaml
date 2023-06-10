@@ -1,0 +1,201 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Strawberry/c/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        D:/projects/c++/engine/build/CMakeFiles/3.26.3/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Strawberry/c/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/projects/c++/engine/build/CMakeFiles/3.26.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-hdyw9i"
+      binary: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-hdyw9i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-hdyw9i
+        
+        Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/Strawberry/c/bin/gmake.exe -f Makefile cmTC_85cd6/fast && C:/Strawberry/c/bin/gmake.exe  -f CMakeFiles/cmTC_85cd6.dir/build.make CMakeFiles/cmTC_85cd6.dir/build
+        gmake.exe[1]: Entering directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-hdyw9i'
+        Building C object CMakeFiles/cmTC_85cd6.dir/CMakeCCompilerABI.c.obj
+        C:/Strawberry/c/bin/gcc.exe   -v -o CMakeFiles/cmTC_85cd6.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCCompilerABI.c"
+        gcc.exe: error: C:/Program: No such file or directory
+        gcc.exe: error: Files/CMake/share/cmake-3.26/Modules/CMakeCCompilerABI.c\\: No such file or directory
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-8.3.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-mpc=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-isl=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh, Built by strawberryperl.com project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/lib -L/opt/build/prerequisites/x86_64-zlib-static/lib -L/opt/build/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/bin/ld.exe
+        Thread model: posix
+        gcc version 8.3.0 (x86_64-posix-seh, Built by strawberryperl.com project) 
+        Linking C executable cmTC_85cd6.exe
+        "C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_85cd6.dir/objects.a
+        C:/Strawberry/c/bin/ar.exe qc CMakeFiles/cmTC_85cd6.dir/objects.a @CMakeFiles/cmTC_85cd6.dir/objects1.rsp
+        C:/Strawberry/c/bin/ar.exe: CMakeFiles/cmTC_85cd6.dir/CMakeCCompilerABI.c.obj: No such file or directory
+        gmake.exe[1]: *** [CMakeFiles/cmTC_85cd6.dir/build.make:100: cmTC_85cd6.exe] Error 1
+        gmake.exe[1]: Leaving directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-hdyw9i'
+        gmake.exe: *** [Makefile:127: cmTC_85cd6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/Strawberry/c/bin/gcc.exe"
+    directories:
+      source: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c"
+      binary: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c
+        
+        Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/Strawberry/c/bin/gmake.exe -f Makefile cmTC_5e1ee/fast && C:/Strawberry/c/bin/gmake.exe  -f CMakeFiles/cmTC_5e1ee.dir/build.make CMakeFiles/cmTC_5e1ee.dir/build
+        gmake.exe[1]: Entering directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c'
+        Building C object CMakeFiles/cmTC_5e1ee.dir/testCCompiler.c.obj
+        C:/Strawberry/c/bin/gcc.exe    -o CMakeFiles/cmTC_5e1ee.dir/testCCompiler.c.obj -c D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c/testCCompiler.c
+        Linking C executable cmTC_5e1ee.exe
+        "C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_5e1ee.dir/objects.a
+        C:/Strawberry/c/bin/ar.exe qc CMakeFiles/cmTC_5e1ee.dir/objects.a @CMakeFiles/cmTC_5e1ee.dir/objects1.rsp
+        C:/Strawberry/c/bin/gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_5e1ee.dir/objects.a -Wl,--no-whole-archive -o cmTC_5e1ee.exe -Wl,--out-implib,libcmTC_5e1ee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_5e1ee.dir/linkLibs.rsp
+        gmake.exe[1]: Leaving directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-lez85c'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-qbjlhd"
+      binary: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-qbjlhd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-qbjlhd
+        
+        Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/Strawberry/c/bin/gmake.exe -f Makefile cmTC_b80b6/fast && C:/Strawberry/c/bin/gmake.exe  -f CMakeFiles/cmTC_b80b6.dir/build.make CMakeFiles/cmTC_b80b6.dir/build
+        gmake.exe[1]: Entering directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-qbjlhd'
+        Building CXX object CMakeFiles/cmTC_b80b6.dir/CMakeCXXCompilerABI.cpp.obj
+        C:/Strawberry/c/bin/g++.exe   -v -o CMakeFiles/cmTC_b80b6.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp"
+        g++.exe: error: C:/Program: No such file or directory
+        g++.exe: error: Files/CMake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp\\: No such file or directory
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-8.3.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-mpc=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-isl=/opt/build/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh, Built by strawberryperl.com project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/include -I/opt/build/prerequisites/x86_64-zlib-static/include -I/opt/build/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/opt/lib -L/opt/build/prerequisites/x86_64-zlib-static/lib -L/opt/build/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/opt/build/x86_64-830-posix-seh-rt_v6/mingw64/bin/ld.exe
+        Thread model: posix
+        gcc version 8.3.0 (x86_64-posix-seh, Built by strawberryperl.com project) 
+        Linking CXX executable cmTC_b80b6.exe
+        "C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_b80b6.dir/objects.a
+        C:/Strawberry/c/bin/ar.exe qc CMakeFiles/cmTC_b80b6.dir/objects.a @CMakeFiles/cmTC_b80b6.dir/objects1.rsp
+        C:/Strawberry/c/bin/ar.exe: CMakeFiles/cmTC_b80b6.dir/CMakeCXXCompilerABI.cpp.obj: No such file or directory
+        gmake.exe[1]: *** [CMakeFiles/cmTC_b80b6.dir/build.make:100: cmTC_b80b6.exe] Error 1
+        gmake.exe[1]: Leaving directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-qbjlhd'
+        gmake.exe: *** [Makefile:127: cmTC_b80b6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Strawberry/c/bin/g++.exe"
+    directories:
+      source: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp"
+      binary: "D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp
+        
+        Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/Strawberry/c/bin/gmake.exe -f Makefile cmTC_6e3d1/fast && C:/Strawberry/c/bin/gmake.exe  -f CMakeFiles/cmTC_6e3d1.dir/build.make CMakeFiles/cmTC_6e3d1.dir/build
+        gmake.exe[1]: Entering directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp'
+        Building CXX object CMakeFiles/cmTC_6e3d1.dir/testCXXCompiler.cxx.obj
+        C:/Strawberry/c/bin/g++.exe    -o CMakeFiles/cmTC_6e3d1.dir/testCXXCompiler.cxx.obj -c D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp/testCXXCompiler.cxx
+        Linking CXX executable cmTC_6e3d1.exe
+        "C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_6e3d1.dir/objects.a
+        C:/Strawberry/c/bin/ar.exe qc CMakeFiles/cmTC_6e3d1.dir/objects.a @CMakeFiles/cmTC_6e3d1.dir/objects1.rsp
+        C:/Strawberry/c/bin/g++.exe -Wl,--whole-archive CMakeFiles/cmTC_6e3d1.dir/objects.a -Wl,--no-whole-archive -o cmTC_6e3d1.exe -Wl,--out-implib,libcmTC_6e3d1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_6e3d1.dir/linkLibs.rsp
+        gmake.exe[1]: Leaving directory 'D:/projects/c++/engine/build/CMakeFiles/CMakeScratch/TryCompile-kq5wbp'
+        
+      exitCode: 0
+...

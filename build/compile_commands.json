@@ -1,0 +1,38 @@
+[
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/main.cpp.obj -c D:/projects/c++/engine/src/main.cpp",
+  "file": "D:/projects/c++/engine/src/main.cpp",
+  "output": "CMakeFiles/engine.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/vao.cpp.obj -c D:/projects/c++/engine/src/vao.cpp",
+  "file": "D:/projects/c++/engine/src/vao.cpp",
+  "output": "CMakeFiles/engine.dir/src/vao.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/vbo.cpp.obj -c D:/projects/c++/engine/src/vbo.cpp",
+  "file": "D:/projects/c++/engine/src/vbo.cpp",
+  "output": "CMakeFiles/engine.dir/src/vbo.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/ebo.cpp.obj -c D:/projects/c++/engine/src/ebo.cpp",
+  "file": "D:/projects/c++/engine/src/ebo.cpp",
+  "output": "CMakeFiles/engine.dir/src/ebo.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/shader_class.cpp.obj -c D:/projects/c++/engine/src/shader_class.cpp",
+  "file": "D:/projects/c++/engine/src/shader_class.cpp",
+  "output": "CMakeFiles/engine.dir/src/shader_class.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/gcc.exe  @CMakeFiles/engine.dir/includes_C.rsp  -o CMakeFiles/engine.dir/src/glad.c.obj -c D:/projects/c++/engine/src/glad.c",
+  "file": "D:/projects/c++/engine/src/glad.c",
+  "output": "CMakeFiles/engine.dir/src/glad.c.obj"
+}
+]
