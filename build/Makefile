@@ -225,6 +225,30 @@ src/shader_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_class.cpp.s
 .PHONY : src/shader_class.cpp.s
 
+src/stb_image.obj: src/stb_image.cpp.obj
+.PHONY : src/stb_image.obj
+
+# target to build an object file
+src/stb_image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.obj
+.PHONY : src/stb_image.cpp.obj
+
+src/stb_image.i: src/stb_image.cpp.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.i
+.PHONY : src/stb_image.cpp.i
+
+src/stb_image.s: src/stb_image.cpp.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.s
+.PHONY : src/stb_image.cpp.s
+
 src/vao.obj: src/vao.cpp.obj
 .PHONY : src/vao.obj
 
@@ -294,6 +318,9 @@ help:
 	@echo "... src/shader_class.obj"
 	@echo "... src/shader_class.i"
 	@echo "... src/shader_class.s"
+	@echo "... src/stb_image.obj"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
 	@echo "... src/vao.obj"
 	@echo "... src/vao.i"
 	@echo "... src/vao.s"

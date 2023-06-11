@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/main.cpp.obj.d"
   "CMakeFiles/engine.dir/src/shader_class.cpp.obj"
   "CMakeFiles/engine.dir/src/shader_class.cpp.obj.d"
+  "CMakeFiles/engine.dir/src/stb_image.cpp.obj"
+  "CMakeFiles/engine.dir/src/stb_image.cpp.obj.d"
   "CMakeFiles/engine.dir/src/vao.cpp.obj"
   "CMakeFiles/engine.dir/src/vao.cpp.obj.d"
   "CMakeFiles/engine.dir/src/vbo.cpp.obj"

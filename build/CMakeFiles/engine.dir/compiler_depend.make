@@ -404,6 +404,7 @@ CMakeFiles/engine.dir/src/main.cpp.obj: D:/projects/c++/engine/src/main.cpp \
   D:/projects/c++/engine/include/glad/glad.h \
   D:/projects/c++/engine/include/KHR/khrplatform.h \
   D:/projects/c++/engine/libs/glfw/include/GLFW/glfw3.h \
+  D:/projects/c++/engine/libs/stb/stb_image.h \
   D:/projects/c++/engine/include/shader_class.hpp \
   C:/Strawberry/c/lib/gcc/x86_64-w64-mingw32/8.3.0/include/c++/fstream \
   C:/Strawberry/c/lib/gcc/x86_64-w64-mingw32/8.3.0/include/c++/bits/codecvt.h \
@@ -1323,6 +1324,8 @@ C:/Strawberry/c/lib/gcc/x86_64-w64-mingw32/8.3.0/include/c++/tr1/legendre_functi
 C:/Strawberry/c/lib/gcc/x86_64-w64-mingw32/8.3.0/include/c++/tr1/modified_bessel_func.tcc:
 
 C:/Strawberry/c/lib/gcc/x86_64-w64-mingw32/8.3.0/include/c++/tr1/poly_laguerre.tcc:
+
+D:/projects/c++/engine/libs/stb/stb_image.h:
 
 D:/projects/c++/engine/include/shader_class.hpp:
 

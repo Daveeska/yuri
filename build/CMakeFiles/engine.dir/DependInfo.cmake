@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/projects/c++/engine/src/ebo.cpp" "CMakeFiles/engine.dir/src/ebo.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/ebo.cpp.obj.d"
   "D:/projects/c++/engine/src/main.cpp" "CMakeFiles/engine.dir/src/main.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/main.cpp.obj.d"
   "D:/projects/c++/engine/src/shader_class.cpp" "CMakeFiles/engine.dir/src/shader_class.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/shader_class.cpp.obj.d"
+  "D:/projects/c++/engine/src/stb_image.cpp" "CMakeFiles/engine.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/stb_image.cpp.obj.d"
   "D:/projects/c++/engine/src/vao.cpp" "CMakeFiles/engine.dir/src/vao.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/vao.cpp.obj.d"
   "D:/projects/c++/engine/src/vbo.cpp" "CMakeFiles/engine.dir/src/vbo.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/vbo.cpp.obj.d"
   )

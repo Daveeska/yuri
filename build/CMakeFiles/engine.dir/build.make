@@ -144,11 +144,26 @@ CMakeFiles/engine.dir/src/shader_class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/shader_class.cpp.s"
 	C:/Strawberry/c/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/projects/c++/engine/src/shader_class.cpp -o CMakeFiles/engine.dir/src/shader_class.cpp.s
 
+CMakeFiles/engine.dir/src/stb_image.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/stb_image.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/src/stb_image.cpp.obj: D:/projects/c++/engine/src/stb_image.cpp
+CMakeFiles/engine.dir/src/stb_image.cpp.obj: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/projects/c++/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/stb_image.cpp.obj"
+	C:/Strawberry/c/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/stb_image.cpp.obj -MF CMakeFiles/engine.dir/src/stb_image.cpp.obj.d -o CMakeFiles/engine.dir/src/stb_image.cpp.obj -c D:/projects/c++/engine/src/stb_image.cpp
+
+CMakeFiles/engine.dir/src/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/stb_image.cpp.i"
+	C:/Strawberry/c/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/projects/c++/engine/src/stb_image.cpp > CMakeFiles/engine.dir/src/stb_image.cpp.i
+
+CMakeFiles/engine.dir/src/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/stb_image.cpp.s"
+	C:/Strawberry/c/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/projects/c++/engine/src/stb_image.cpp -o CMakeFiles/engine.dir/src/stb_image.cpp.s
+
 CMakeFiles/engine.dir/src/glad.c.obj: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/glad.c.obj: CMakeFiles/engine.dir/includes_C.rsp
 CMakeFiles/engine.dir/src/glad.c.obj: D:/projects/c++/engine/src/glad.c
 CMakeFiles/engine.dir/src/glad.c.obj: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/projects/c++/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/engine.dir/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/projects/c++/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/engine.dir/src/glad.c.obj"
 	C:/Strawberry/c/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/engine.dir/src/glad.c.obj -MF CMakeFiles/engine.dir/src/glad.c.obj.d -o CMakeFiles/engine.dir/src/glad.c.obj -c D:/projects/c++/engine/src/glad.c
 
 CMakeFiles/engine.dir/src/glad.c.i: cmake_force
@@ -166,6 +181,7 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/vbo.cpp.obj" \
 "CMakeFiles/engine.dir/src/ebo.cpp.obj" \
 "CMakeFiles/engine.dir/src/shader_class.cpp.obj" \
+"CMakeFiles/engine.dir/src/stb_image.cpp.obj" \
 "CMakeFiles/engine.dir/src/glad.c.obj"
 
 # External object files for target engine
@@ -176,11 +192,12 @@ engine.exe: CMakeFiles/engine.dir/src/vao.cpp.obj
 engine.exe: CMakeFiles/engine.dir/src/vbo.cpp.obj
 engine.exe: CMakeFiles/engine.dir/src/ebo.cpp.obj
 engine.exe: CMakeFiles/engine.dir/src/shader_class.cpp.obj
+engine.exe: CMakeFiles/engine.dir/src/stb_image.cpp.obj
 engine.exe: CMakeFiles/engine.dir/src/glad.c.obj
 engine.exe: CMakeFiles/engine.dir/build.make
 engine.exe: CMakeFiles/engine.dir/linkLibs.rsp
 engine.exe: CMakeFiles/engine.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/projects/c++/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable engine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/projects/c++/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable engine.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/engine.dir/objects.a
 	C:/Strawberry/c/bin/ar.exe qc CMakeFiles/engine.dir/objects.a @CMakeFiles/engine.dir/objects1.rsp
 	C:/Strawberry/c/bin/g++.exe -Wl,--whole-archive CMakeFiles/engine.dir/objects.a -Wl,--no-whole-archive -o engine.exe -Wl,--out-implib,libengine.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/engine.dir/linkLibs.rsp

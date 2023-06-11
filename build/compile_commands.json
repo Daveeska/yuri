@@ -31,6 +31,12 @@
 },
 {
   "directory": "D:/projects/c++/engine/build",
+  "command": "C:/Strawberry/c/bin/g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/engine.dir/src/stb_image.cpp.obj -c D:/projects/c++/engine/src/stb_image.cpp",
+  "file": "D:/projects/c++/engine/src/stb_image.cpp",
+  "output": "CMakeFiles/engine.dir/src/stb_image.cpp.obj"
+},
+{
+  "directory": "D:/projects/c++/engine/build",
   "command": "C:/Strawberry/c/bin/gcc.exe  @CMakeFiles/engine.dir/includes_C.rsp  -o CMakeFiles/engine.dir/src/glad.c.obj -c D:/projects/c++/engine/src/glad.c",
   "file": "D:/projects/c++/engine/src/glad.c",
   "output": "CMakeFiles/engine.dir/src/glad.c.obj"
