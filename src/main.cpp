@@ -1,34 +1,49 @@
+#include "ext/matrix_clip_space.hpp"
+#include "ext/matrix_transform.hpp"
+#include "trigonometric.hpp"
 #define WINDOW_WIDTH 720
 #define WINDOW_HEIGHT 720
 
 #include<iostream>
+#include<chrono>
 #include<cmath>
 
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include<stb_image.h>
+#include<glm.hpp>
+#include<gtc/matrix_transform.hpp>
+#include<gtc/type_ptr.hpp>
 
 #include"shader_class.hpp"
 #include"vao.hpp"
 #include"vbo.hpp"
 #include"ebo.hpp"
+#include"Camera.hpp"
+
+#include"Texture.hpp"
 
 // Vertices coordinates
 GLfloat vertices[] =
-{ 
-	//COORDINATES		/COLORS/		
-	-0.5, -0.5, 0.0,	1.0, 0.0, 0.0, 0.0, 0.0,
-	-0.5,  0.5, 0.0,	0.0, 1.0, 0.0, 0.0, 1.0,
-	 0.5,  0.5, 0.0,	0.0, 0.0, 1.0, 1.0, 1.0,
-	 0.5, -0.5, 0.0,	1.0, 1.0, 1.0, 1.0, 0.0
+{ //     COORDINATES     /        COLORS      /   TexCoord  //
+	-0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+	-0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+	 0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+	 0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	2.5f, 5.0f
 };
 
 // Indices for vertices order
 GLuint indices[] =
 {
-	0, 2, 1, // Upper triangle
-	0, 3, 2
-};	
+	0, 1, 2,
+	0, 2, 3,
+	0, 1, 4,
+	1, 2, 4,
+	2, 3, 4,
+	3, 0, 4
+};
+
 
 int main()
 {
@@ -77,54 +92,52 @@ int main()
 	vbo.Unbind();
 	ebo.Unbind();
 
-	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
+	auto prevTime=std::chrono::high_resolution_clock::now();
+	double deltaTime=-1;
 
-	//Texture
+	Texture dwg("assets/dirtWithGrass.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+	dwg.texUnit(shaderProgram, "tex0", 0);
 	
-	int widthImg, heightImg, numColCh;
-	unsigned char* bytes = stbi_load("assets/dirtWithGrass.png", &widthImg, &heightImg, &numColCh, 0);
+	glEnable(GL_DEPTH_TEST);
 
-	GLuint texture;
-	glGenTextures(1, &texture);
-	glActiveTexture(GL_TEXTURE0);
-	glBindTexture(GL_TEXTURE_2D, texture);
-	
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	Camera camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0,0,2));
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA, GL_UNSIGNED_BYTE, bytes);
-	glGenerateMipmap(GL_TEXTURE_2D);
-
-	stbi_image_free(bytes);
-	glBindTexture(GL_TEXTURE_2D, 0);
-
-	GLuint tex0Uni = glGetUniformLocation(shaderProgram.ID, "tex0");
-	shaderProgram.Activate();
-	glUniform1i(tex0Uni, 0);
-	
 	// Main while loop
 	while (!glfwWindowShouldClose(window))
 	{
+		
+		auto currTime = std::chrono::high_resolution_clock::now();
+	
+		//std::cout<<deltaTime<<"\n";
+		//std::cout<<"Camera speed: "<<camera.speed<<"\n";
+		//std::cout<<"Delta Time: "<<deltaTime<<"\n";
+
 		// Specify the color of the background
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		// Clean the back buffer and assign the new color to it
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		// Tell OpenGL which Shader Program we want to use
 		shaderProgram.Activate();
-		//Assign vallue to uniform
-		glUniform1f(uniID, 0.5f);
-		glBindTexture(GL_TEXTURE_2D, texture);
+
+		camera.Inputs(window, deltaTime);
+		camera.Matrix(45.0f, 0.1f, 100.0f, shaderProgram, "camMatrix");
+
 		// Bind the VAO so OpenGL knows to use it
+		dwg.Bind();
 		vao.Bind();	
 		// Draw primitives, number of indices, datatype of indices, index of indices
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(int), GL_UNSIGNED_INT, 0);
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
 		// Take care of all GLFW events
 		glfwPollEvents();
+
+
+		auto durationTime = std::chrono::duration_cast<std::chrono::milliseconds>(currTime-prevTime);
+		deltaTime=durationTime.count()/1000.0f;
+
+		prevTime=currTime;
+
 	}
 
 
@@ -133,9 +146,9 @@ int main()
 	vao.Delete();
 	vbo.Delete();
 	ebo.Delete();
+	dwg.Delete();
 	shaderProgram.Delete();
 
-	glDeleteTextures(1, &texture);
 
 	// Delete window before ending the program
 	glfwDestroyWindow(window);
